@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./sass/_variables.scss";
+
+body {
+    background-color: $primary-color;
+}
+
+nav {
+    background-color: $secondary-color;
+}
+

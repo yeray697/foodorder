@@ -1,0 +1,7 @@
+@import "../node_modules/materialize-css/sass/components/_color.scss";
+@import "../node_modules/materialize-css/sass/components/_variables.scss";
+
+$primary-color: color("deep-orange", "lighten-1");
+$secondary-color: color("deep-orange", "base");
+$accent-color: color("deep-orange", "accent-4");
+$navbar-text-color: white;
