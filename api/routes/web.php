@@ -12,5 +12,27 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return View::make('index');
 });
+
+Route::get('/home', function () {
+    return View::make('header',['title' => 'Home'
+                                ,'navbar' => true
+                                ,'navbarSelected' => 'home']);
+});
+
+
+Route::get('/login', function () {
+    return View::make('header',['title' => 'Home'
+                                ,'navbar' => true
+                                ,'navbarSelected' => 'home']);
+});
+
+Route::get('/signup', function () {
+    return View::make('header',['title' => 'Home'
+                                ,'navbar' => true
+                                ,'navbarSelected' => 'home']);
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
