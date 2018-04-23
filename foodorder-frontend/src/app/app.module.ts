@@ -11,8 +11,10 @@ import { OrganizationComponent } from './organization/organization.component';
 import { RestaurantGroupComponent } from './restaurant-group/restaurant-group.component';
 import { UserComponent } from './user/user.component';
 import { UserOrderComponent } from './user-order/user-order.component';
+import { HomeComponent } from './home/home.component';
 
 const ROUTES: Routes = [
+  { path: '', component:  HomeComponent },
   { path: 'test', component: TestComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -26,7 +28,8 @@ const ROUTES: Routes = [
     OrganizationComponent,
     RestaurantGroupComponent,
     UserComponent,
-    UserOrderComponent
+    UserOrderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
