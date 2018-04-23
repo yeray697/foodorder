@@ -6,6 +6,11 @@ import {RouterModule, Routes} from '@angular/router';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { RestaurantComponent } from './restaurant/restaurant.component';
+import { OrganizationComponent } from './organization/organization.component';
+import { RestaurantGroupComponent } from './restaurant-group/restaurant-group.component';
+import { UserComponent } from './user/user.component';
+import { UserOrderComponent } from './user-order/user-order.component';
 
 const ROUTES: Routes = [
   { path: 'test', component: TestComponent },
@@ -16,7 +21,12 @@ const ROUTES: Routes = [
   declarations: [
     AppComponent,
     TestComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    RestaurantComponent,
+    OrganizationComponent,
+    RestaurantGroupComponent,
+    UserComponent,
+    UserOrderComponent
   ],
   imports: [
     BrowserModule,
