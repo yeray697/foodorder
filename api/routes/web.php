@@ -11,33 +11,6 @@
 |
 */
 
-// Route::get('/', function () {
-//     return View::make('index');
-// });
-
-// Route::get('/home', function () {
-//     return View::make('header',['title' => 'Home'
-//                                 ,'navbar' => true
-//                                 ,'navbarSelected' => 'home']);
-// });
-
-
-// Route::get('/login', function () {
-//     return View::make('header',['title' => 'Home'
-//                                 ,'navbar' => true
-//                                 ,'navbarSelected' => 'home']);
-// });
-
-// Route::get('/signup', function () {
-//     return View::make('header',['title' => 'Home'
-//                                 ,'navbar' => true
-//                                 ,'navbarSelected' => 'home']);
-// });
-Auth::routes();
-
-// Route::get('/home', 'HomeController@index')->name('home');
-
-
 Route::get('/bundles/{file}', function ($file) {
     if(File::exists(config('global.frontEndDeployPath') . $file)){
         return File::get(config('global.frontEndDeployPath') . $file);

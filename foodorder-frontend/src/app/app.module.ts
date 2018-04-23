@@ -12,6 +12,8 @@ import { RestaurantGroupComponent } from './restaurant-group/restaurant-group.co
 import { UserComponent } from './user/user.component';
 import { UserOrderComponent } from './user-order/user-order.component';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 const ROUTES: Routes = [
   { path: '', component:  HomeComponent },
@@ -29,7 +31,9 @@ const ROUTES: Routes = [
     RestaurantGroupComponent,
     UserComponent,
     UserOrderComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
