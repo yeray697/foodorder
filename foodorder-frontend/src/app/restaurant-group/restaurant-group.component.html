@@ -1,3 +1,7 @@
-<p>
-  restaurant-group works!
-</p>
+<div class="card">
+  <div class="card-content">
+    <div>{{restaurantGroup.date | date}}</div>
+    <div class="card-title">{{restaurantGroup.restaurant.name}}</div>
+    {{restaurantGroup.restaurant.description}}
+  </div>  
+</div>

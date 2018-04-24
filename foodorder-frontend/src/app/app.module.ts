@@ -14,6 +14,7 @@ import { UserOrderComponent } from './user-order/user-order.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { RestaurantGroupService } from './restaurant-group/restaurant-group.service';
 
 const ROUTES: Routes = [
   { path: '', component:  HomeComponent },
@@ -39,7 +40,7 @@ const ROUTES: Routes = [
     BrowserModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [RestaurantGroupService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

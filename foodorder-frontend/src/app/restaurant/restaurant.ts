@@ -1,14 +1,16 @@
 export class Restaurant {
-    private id: number;
-    private name: string;
-    private description: string;
-    private telephone: string;
-    private lat: number;
-    private lng: number;
-    private photoUrl: string;
-    private menuUrl: string;
-    private isPrivate: boolean;
-    private createdBy: number;
-    private createdDate: Date;
-    private lastUpdate: Date;    
+    constructor(
+        public id: number,
+        public name: string,
+        public description: string,
+        public telephone: string,
+        public lat: number,
+        public lng: number,
+        public photoUrl: string,
+        public menuUrl: string,
+        public isPrivate: boolean,
+        public createdBy: number,
+        public createdDate: Date,
+        public lastUpdate: Date
+    ){}
 }

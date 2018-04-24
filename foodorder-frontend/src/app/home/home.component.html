@@ -1,3 +1,7 @@
-<p>
-  home works!
-</p>
+<div class="row">
+  <div *ngFor="let restaurantGroup of restaurantGroups$ | async">
+    <div class="col s12 m3">
+      <app-restaurant-group [restaurantGroup]="restaurantGroup"></app-restaurant-group>
+    </div>
+  </div>
+</div>

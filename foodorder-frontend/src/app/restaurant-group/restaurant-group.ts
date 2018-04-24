@@ -1,11 +1,19 @@
+import { Restaurant } from "../restaurant/restaurant";
+import { Organization } from "../organization/organization";
+
 export class RestaurantGroup {
-    private id: number;
-    private restaurantId: number;
-    private organizationId: number;
-    private date: Date;
-    private price: number;
-    private request: string;
-    private groupModified: number;
-    private createdBy: number;
-    private createdDate: Date;
+
+    constructor(
+        public id: number,
+        public restaurantId: number,
+        public organizationId: number,
+        public date: Date,
+        public price: number,
+        public request: string,
+        public groupModified: number,
+        public createdBy: number,
+        public createdDate: Date,
+        public restaurant: Restaurant,
+        public organization: Organization
+    ){}
 }
